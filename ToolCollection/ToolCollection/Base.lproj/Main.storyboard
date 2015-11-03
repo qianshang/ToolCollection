@@ -35,14 +35,15 @@
                     <navigationItem key="navigationItem" title="工具合集" id="gTA-MS-gaX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="4Y2-uT-QeU" kind="push" identifier="ShowScreenShotsVC" id="PTl-Ef-JGh"/>
-                        <segue destination="9Q0-jX-08v" kind="push" identifier="ShowQrCodeVC" id="iEE-eu-aSp"/>
-                        <segue destination="EX4-7b-YUZ" kind="push" identifier="ShowCutoutVC" id="Fpo-kB-S7b"/>
+                        <segue destination="4Y2-uT-QeU" kind="show" identifier="ShowScreenShotsVC" id="PTl-Ef-JGh"/>
+                        <segue destination="9Q0-jX-08v" kind="show" identifier="ShowQrCodeVC" id="iEE-eu-aSp"/>
+                        <segue destination="EX4-7b-YUZ" kind="show" identifier="ShowCutoutVC" id="Fpo-kB-S7b"/>
+                        <segue destination="jMZ-EE-eKj" kind="show" identifier="ShowSlideVC" id="9Kd-9G-qnF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Va0-b5-kIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="343"/>
+            <point key="canvasLocation" x="194" y="343"/>
         </scene>
         <!--截图-->
         <scene sceneID="p01-yv-6yS">
@@ -95,7 +96,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="截图" id="3mz-hG-w3e">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="reply" id="Wc5-aU-yt7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="Wc5-aU-yt7">
                             <connections>
                                 <action selector="screenShot" destination="4Y2-uT-QeU" id="zOa-27-gwj"/>
                             </connections>
@@ -155,7 +156,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="二维码" id="5RT-4c-2VK">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="4al-u9-Pyo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="4al-u9-Pyo">
                             <connections>
                                 <action selector="replay" destination="9Q0-jX-08v" id="cQM-ly-I4B"/>
                             </connections>
@@ -168,7 +169,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axm-UC-nQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="1114"/>
+            <point key="canvasLocation" x="404" y="1123"/>
+        </scene>
+        <!--侧栏-->
+        <scene sceneID="Dhc-jk-UJY">
+            <objects>
+                <viewController id="jMZ-EE-eKj" customClass="SlideInstanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1hB-dW-lcY"/>
+                        <viewControllerLayoutGuide type="bottom" id="jIS-B8-BvR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3uh-gR-tRA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="侧栏" id="XYB-Tc-6Hq">
+                        <barButtonItem key="rightBarButtonItem" title="三" id="mo3-1H-2Xg">
+                            <connections>
+                                <action selector="showSlide" destination="jMZ-EE-eKj" id="jxN-Fb-b1P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGU-m8-GlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="1123"/>
         </scene>
         <!--抠图-->
         <scene sceneID="0Jm-Qd-ptE">

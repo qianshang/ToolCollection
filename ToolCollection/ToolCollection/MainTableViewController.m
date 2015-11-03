@@ -26,8 +26,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     _dataSource = @[@[@"截图",@"ShowScreenShotsVC"],
-                    @[@"抠图",@"ShowCuoutVC"],
-                    @[@"二维码",@"ShowQrCodeVC"]];
+                    @[@"抠图",@"ShowCutoutVC"],
+                    @[@"二维码",@"ShowQrCodeVC"],
+                    @[@"侧栏",@"ShowSlideVC"]];
     self.tableView.tableFooterView = [[UIView alloc] init];
 }
 

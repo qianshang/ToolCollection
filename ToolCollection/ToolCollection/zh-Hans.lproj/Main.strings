@@ -1,0 +1,18 @@
+
+/* Class = "UINavigationItem"; title = "截图"; ObjectID = "3mz-hG-w3e"; */
+"3mz-hG-w3e.title" = "截图";
+
+/* Class = "UIViewController"; title = "截图"; ObjectID = "4Y2-uT-QeU"; */
+"4Y2-uT-QeU.title" = "截图";
+
+/* Class = "UINavigationItem"; title = "二维码"; ObjectID = "5RT-4c-2VK"; */
+"5RT-4c-2VK.title" = "二维码";
+
+/* Class = "UINavigationItem"; title = "工具合集"; ObjectID = "gTA-MS-gaX"; */
+"gTA-MS-gaX.title" = "工具合集";
+
+/* Class = "UILabel"; text = "截取之后的图片"; ObjectID = "qDZ-Ow-g7S"; */
+"qDZ-Ow-g7S.text" = "截取之后的图片";
+
+/* Class = "UINavigationItem"; title = "抠图"; ObjectID = "zgX-mU-2nG"; */
+"zgX-mU-2nG.title" = "抠图";

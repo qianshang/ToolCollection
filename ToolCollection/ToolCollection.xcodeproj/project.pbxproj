@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792C9E7E1BE85029006491D0 /* SlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C9E7D1BE85029006491D0 /* SlideViewController.m */; };
+		792C9E841BE85A61006491D0 /* SlideInstanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C9E831BE85A61006491D0 /* SlideInstanceViewController.m */; };
 		79A24C771BE721F400FCFC1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A24C761BE721F400FCFC1F /* main.m */; };
 		79A24C7A1BE721F400FCFC1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A24C791BE721F400FCFC1F /* AppDelegate.m */; };
 		79A24C801BE721F400FCFC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A24C7E1BE721F400FCFC1F /* Main.storyboard */; };
@@ -39,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		792C9E791BE794CF006491D0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		792C9E7A1BE794CF006491D0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		792C9E7C1BE85029006491D0 /* SlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideViewController.h; sourceTree = "<group>"; };
+		792C9E7D1BE85029006491D0 /* SlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideViewController.m; sourceTree = "<group>"; };
+		792C9E821BE85A61006491D0 /* SlideInstanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideInstanceViewController.h; sourceTree = "<group>"; };
+		792C9E831BE85A61006491D0 /* SlideInstanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideInstanceViewController.m; sourceTree = "<group>"; };
 		79A24C721BE721F400FCFC1F /* ToolCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A24C761BE721F400FCFC1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79A24C781BE721F400FCFC1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792C9E7B1BE84FEC006491D0 /* 侧栏 */ = {
+			isa = PBXGroup;
+			children = (
+				792C9E7C1BE85029006491D0 /* SlideViewController.h */,
+				792C9E7D1BE85029006491D0 /* SlideViewController.m */,
+				792C9E821BE85A61006491D0 /* SlideInstanceViewController.h */,
+				792C9E831BE85A61006491D0 /* SlideInstanceViewController.m */,
+			);
+			path = "侧栏";
+			sourceTree = "<group>";
+		};
 		79A24C691BE721F400FCFC1F = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +131,7 @@
 		79A24C741BE721F400FCFC1F /* ToolCollection */ = {
 			isa = PBXGroup;
 			children = (
+				792C9E7B1BE84FEC006491D0 /* 侧栏 */,
 				79A24CB51BE74F3E00FCFC1F /* 二维码 */,
 				79A24CB11BE72D7700FCFC1F /* 抠图 */,
 				79A24CA81BE721FD00FCFC1F /* 截图 */,
@@ -316,8 +336,10 @@
 			files = (
 				79A24CAE1BE7228C00FCFC1F /* MainTableViewController.m in Sources */,
 				79A24C7A1BE721F400FCFC1F /* AppDelegate.m in Sources */,
+				792C9E7E1BE85029006491D0 /* SlideViewController.m in Sources */,
 				79A24CAB1BE7224700FCFC1F /* ScreenShotsViewController.m in Sources */,
 				79A24CB41BE72DAC00FCFC1F /* CutoutViewController.m in Sources */,
+				792C9E841BE85A61006491D0 /* SlideInstanceViewController.m in Sources */,
 				79A24CB81BE7585600FCFC1F /* QrCodeViewController.m in Sources */,
 				79A24C771BE721F400FCFC1F /* main.m in Sources */,
 			);
@@ -359,6 +381,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				79A24C7F1BE721F400FCFC1F /* Base */,
+				792C9E791BE794CF006491D0 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -367,6 +390,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				79A24C841BE721F400FCFC1F /* Base */,
+				792C9E7A1BE794CF006491D0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -410,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -447,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -460,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ToolCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mxt.ToolCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ToolCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mxt.ToolCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";

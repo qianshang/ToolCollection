@@ -17,9 +17,9 @@ static const char *kScanQRCodeQueueName = "ScanQRCodeQueue";
 
 @interface QrCodeViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
-@property (nonatomic , weak) IBOutlet UIImageView *prompt_imageView;
-@property (nonatomic) AVCaptureSession *captureSession;
-@property (nonatomic) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+@property (nonatomic , weak) IBOutlet UIImageView           *prompt_imageView;
+@property (nonatomic , strong) AVCaptureSession             *captureSession;
+@property (nonatomic , strong) AVCaptureVideoPreviewLayer   *videoPreviewLayer;
 
 @end
 
@@ -28,7 +28,7 @@ static const char *kScanQRCodeQueueName = "ScanQRCodeQueue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [self startReading];
 }
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
