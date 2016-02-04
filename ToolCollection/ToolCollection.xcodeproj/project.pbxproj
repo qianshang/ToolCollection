@@ -21,6 +21,8 @@
 		79A24CB01BE72BC600FCFC1F /* 衣橱-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79A24CAF1BE72BC600FCFC1F /* 衣橱-01.jpg */; };
 		79A24CB41BE72DAC00FCFC1F /* CutoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A24CB31BE72DAC00FCFC1F /* CutoutViewController.m */; };
 		79A24CB81BE7585600FCFC1F /* QrCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A24CB71BE7585600FCFC1F /* QrCodeViewController.m */; };
+		84DDE3581C631A22004B810D /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDE3551C631A22004B810D /* JRSwizzle.m */; };
+		84DDE3591C631A22004B810D /* UIControl+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDE3571C631A22004B810D /* UIControl+AOP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		79A24CB31BE72DAC00FCFC1F /* CutoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutoutViewController.m; sourceTree = "<group>"; };
 		79A24CB61BE7585600FCFC1F /* QrCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QrCodeViewController.h; sourceTree = "<group>"; };
 		79A24CB71BE7585600FCFC1F /* QrCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QrCodeViewController.m; sourceTree = "<group>"; };
+		84DDE3541C631A22004B810D /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		84DDE3551C631A22004B810D /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		84DDE3561C631A22004B810D /* UIControl+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+AOP.h"; sourceTree = "<group>"; };
+		84DDE3571C631A22004B810D /* UIControl+AOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+AOP.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		79A24C741BE721F400FCFC1F /* ToolCollection */ = {
 			isa = PBXGroup;
 			children = (
+				84DDE3531C631A22004B810D /* AOP */,
 				792C9E7B1BE84FEC006491D0 /* 侧栏 */,
 				79A24CB51BE74F3E00FCFC1F /* 二维码 */,
 				79A24CB11BE72D7700FCFC1F /* 抠图 */,
@@ -200,6 +207,17 @@
 				79A24CB71BE7585600FCFC1F /* QrCodeViewController.m */,
 			);
 			path = "二维码";
+			sourceTree = "<group>";
+		};
+		84DDE3531C631A22004B810D /* AOP */ = {
+			isa = PBXGroup;
+			children = (
+				84DDE3541C631A22004B810D /* JRSwizzle.h */,
+				84DDE3551C631A22004B810D /* JRSwizzle.m */,
+				84DDE3561C631A22004B810D /* UIControl+AOP.h */,
+				84DDE3571C631A22004B810D /* UIControl+AOP.m */,
+			);
+			path = AOP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +358,9 @@
 				79A24CAB1BE7224700FCFC1F /* ScreenShotsViewController.m in Sources */,
 				79A24CB41BE72DAC00FCFC1F /* CutoutViewController.m in Sources */,
 				792C9E841BE85A61006491D0 /* SlideInstanceViewController.m in Sources */,
+				84DDE3591C631A22004B810D /* UIControl+AOP.m in Sources */,
 				79A24CB81BE7585600FCFC1F /* QrCodeViewController.m in Sources */,
+				84DDE3581C631A22004B810D /* JRSwizzle.m in Sources */,
 				79A24C771BE721F400FCFC1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
